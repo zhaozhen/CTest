@@ -32,6 +32,27 @@ int length(){
 }
 
 void insertFist(int key,int data){
+	struct node* link=(struct node*)malloc(sizeof(struct node));
+	link->key=key;
+	link->data=data;
+	//head is NULL
+	if(isEmpty()){
+		head=link;
+		head->next=head;
+	}else{
+		link->next=head;
+		head=link;
+	}
+}
 
+struct node* deleteFirst(){
+	struct node* tempLink=head;
+	if(head->next==head){
+		head=NULL;
+		return tempLink;
+	}
+}
+
+void pritLis(){
 	
 }
