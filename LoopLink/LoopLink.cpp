@@ -86,6 +86,8 @@ int main(int argc, char const *argv[])
 		printf("(%d,%d)\n",temp->key,temp->data);
 	}
 
+
+
 	printf("delete after");
 	pritList();
 
